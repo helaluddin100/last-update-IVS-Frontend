@@ -1,0 +1,124 @@
+
+@font-face {
+    font-family: 'LuckiestGuy-Regular';
+    src: url('../fonts/LuckiestGuy-Regular.ttf');
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #00FF00;
+    --secondary-color: #FFFFFF;
+    --primary-font-family:'LuckiestGuy-Regular', sans-serif;
+    --secondary-font-family:'Raleway', sans-serif;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(107.56deg, #0E001E 0%, #0A0015 100%);
+}
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+h1{
+    font-family: var(--primary-font-family);
+    color: #FFFFFF;
+    font-size: 70px;
+    font-weight: 100;
+  }
+  h1 span{
+    color: #00FF00;
+    
+  }
+  p{
+    font-family: var(--secondary-font-family);
+    font-size: 16px;
+    font-weight: 100;
+  }
+.container{
+    width: 80%;
+    margin: auto;
+    max-width: 1300px;
+}
+/* @media only screen and (max-width:900px){
+    
+    .container{
+        width: 95%;
+        margin: auto;
+    }
+    } */
+    @media (max-width: 900px) {
+        .container{
+            width: 95%;
+           
+      }
+    }
+
+/* SCROLL BAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--primary-color); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color); 
+  }
+
+
+  .section-title{
+    font-family: var(--primary-font-family);
+    color: #fff;
+    font-weight: 400;
+    font-size: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+@media(max-width: 1500px){
+    .container{
+        width: 85%;
+    }
+}
+@media(max-width: 1400px){
+    .section-title{
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+
+@media(max-width: 950px){
+    .section-title{
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+

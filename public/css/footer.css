@@ -1,0 +1,196 @@
+@import url("./global.css");
+
+/*---------- Community Section  ------------*/
+
+.footer-all {
+    background: url("../images/footer-bg.png");
+    padding: 100px 0 0px 0;
+    position: relative;
+}
+
+.community-box {
+    background: #0e062080;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    padding: 50px 100px;
+}
+
+.community-box h1 {
+    text-align: center;
+}
+
+.community-box p {
+    text-align: center;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+.join-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-group a img {
+    width: 200px;
+}
+
+
+/*----------- Footer  ---------------*/
+
+.footer-con {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+    position: relative;
+}
+
+.nft-constructer p {
+    font-family: var(--secondary-font);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-constructer p a {
+    text-decoration: none;
+    color: var(--praimary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-constructer p a img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials img {
+    width: 50px;
+    transition: all 0.3s ease;
+}
+
+.socials img:hover {
+    transform: scale(1.1);
+}
+
+.socials a:nth-child(2) {
+    margin: 0 10px;
+}
+
+.copyright p {
+    text-align: center;
+    font-family: var(--secondary-font-family);
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.rocket {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.footer-side-img-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.footer-side-img-1 img {
+    width: 300px;
+}
+
+.footer-side-img-2 {
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+}
+
+.footer-side-img-2 img {
+    width: 400px;
+}
+
+
+/*------------------  Community Section  --------------------*/
+
+@media (max-width: 1200px) {
+    .footer-side-img-1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .footer-side-img-1 img {
+        width: 200px;
+    }
+    .footer-side-img-2 {
+        position: absolute;
+        right: 0;
+        bottom: 100px;
+    }
+    .footer-side-img-2 img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 700px) {
+    .community-box {
+        padding: 50px 20px;
+    }
+    .rocket img {
+        width: 100px;
+    }
+    .footer-side-img-1 {
+        display: none;
+    }
+    .footer-side-img-2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer-all {
+        background: url("../images/footer-bg.png");
+        padding: 100px 0 100px 0;
+    }
+    .footer-con {
+        width: 90%;
+        margin: auto;
+        padding: 80px 0;
+        position: relative;
+    }
+    .nft-constructer p {
+        font-family: var(--secondary-font);
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nft-constructer p a {
+        text-decoration: none;
+        color: var(--praimary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nft-constructer p a img {
+        width: 30px;
+        margin: 0 10px;
+    }
+    .copyright p {
+        font-size: 14px;
+    }
+}

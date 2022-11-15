@@ -1,0 +1,123 @@
+@import url('./global.css');
+
+.mint{
+    position: relative;
+    padding: 200px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mint-box{
+    background: #106271;
+    border: 8px solid #fff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 600px;
+}
+.mint-box h1{
+    font-family: var(--primary-font-family);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.price{
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-img img{
+    width: 100px;
+}
+.price-right p{
+    color: #FFFFFF;
+    font-family: var(--secondary-font-family);
+}
+.price-right h3{
+    color: #FFFFFF;
+    font-family: var(--secondary-font-family);
+}
+.box{
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+.count{
+    display: flex;
+    align-items: center;
+}
+.count button img{
+    width: 30px;
+    background: none;
+}
+.count button{
+    background: none;
+    cursor: pointer;
+
+}
+.count h2{
+    margin: 0 7px;
+    color: #FFFFFF;
+    font-family: var(--primary-font-family);
+}
+.max h2{
+    color: #FFFFFF;
+    font-family: var(--secondary-font-family);
+}
+.mint-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mint-btn button{
+    font-family: var(--secondary-font-family);
+    color: #FFFFFF;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    background: var(--primary-color);
+    border: 3px solid #FFFFFF;
+    transform: rotate(0deg) skew(334deg);
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 1px 4px, rgba(255, 255, 255, 0.5) 0px 0px 0px 3px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-weight: 700;
+}
+.mint-btn button:hover{
+    transform: scale(1.1);
+}
+.minted{
+    border: 3px solid #0f0f0f;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.minted h2{
+    font-size: 18px;
+    font-family: var(--primary-font-family);
+    color: #106271;
+    font-weight: 100;
+}
+
+
+
+@media only screen and (max-width:500px){
+    .mint{
+        position: relative;
+        padding: 100px 0 100px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

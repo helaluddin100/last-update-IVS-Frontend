@@ -1,0 +1,320 @@
+@import url("./global.css");
+.home {
+    position: relative;
+}
+
+.satelight {
+    position: absolute;
+    left: 0;
+    top: -50px;
+}
+
+.satelight img {
+    width: 50px;
+}
+
+
+/*---------------  remove after building----------------------*/
+
+.header-mobile {
+    display: none;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header nav {
+    width: 70%;
+    max-width: 1400px;
+    display: flex;
+    background: #ffffff20;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    border-radius: 20px;
+    padding: 10px 50px;
+    border-left: 2px solid #ffffff;
+    border-right: 8px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-bottom: 8px solid #ffffff;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+}
+
+header nav .nav-left a {
+    margin-right: 5%;
+    text-decoration: none;
+    font-family: var(--primary-font-family);
+}
+
+header nav .nav-right a {
+    text-decoration: none;
+    /* margin-left: 5%; */
+    margin-left: 20px;
+}
+
+header nav a a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 100%;
+    color: #ffffff;
+    transition: 0.3s;
+    font-family: var(--primary-font-family);
+}
+
+header nav a a:hover {
+    color: var(--primary-color);
+}
+
+header nav a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 100%;
+    color: #ffffff;
+    transition: 0.3s;
+    font-family: var(--primary-font-family);
+}
+
+header nav a:hover {
+    color: var(--primary-color);
+}
+
+.nav-logo {
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 16%;
+    left: 42%;
+}
+
+.nav-logo img {
+    width: 139px;
+}
+
+.logo-head {
+    width: 100px;
+}
+
+.btn-header {
+    padding: 15px 30px;
+    background: var(--primary-color);
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    color: #025b6d;
+    transition: 0.3s;
+    border-radius: 100px;
+    border: 2px solid var(--praimary-color);
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.btn-header:hover {
+    transform: scale(1.05);
+}
+
+.nav-socials {
+    position: absolute;
+    right: 337px;
+    top: 136px;
+}
+
+.nav-socials img {
+    width: 50px;
+    transition: all 0.3s ease;
+}
+
+.nav-socials a:nth-child(2) {
+    margin: 0 10px;
+}
+
+.nav-socials img:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1600px) {
+    header nav {
+        width: 80%;
+    }
+    .nav-logo {
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 16%;
+        left: 39%;
+    }
+    .nav-logo img {
+        width: 139px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    header nav {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    header nav a a {
+        font-size: 20px;
+    }
+    .btn-header {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .header-mobile {
+        position: absolute;
+    }
+    .header-mobile .temporary-menu {
+        left: 300px;
+    }
+    .mobile-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+    }
+    .mobile-logo {
+        width: 92px;
+    }
+    header {
+        display: none;
+        z-index: 99999;
+        position: relative;
+    }
+    .header-mobile {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -12px;
+        padding: 0px;
+        z-index: 99999;
+    }
+    .header-mobile .hum-btn {
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        z-index: 99999;
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+    .header-mobile a {
+        z-index: 99999;
+    }
+    .header-links-mobile .social-links {
+        margin-top: 100px;
+    }
+    nav {
+        position: absolute;
+        display: grid;
+        top: -155%;
+        z-index: 999999;
+    }
+    nav a {
+        font-size: 1.45em;
+    }
+    .header-links-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .hidden {
+        top: -10%;
+    }
+    #mobile-nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        right: 0px;
+        padding: 224px 24px 465px 24px;
+        background: linear-gradient(107.56deg, #0e001e 0%, #0a0015 100%);
+        width: 100%;
+        z-index: 99 !important;
+        transition: top 0.4s ease-out;
+        height: 130vh;
+        border: none;
+        border-radius: 0px;
+    }
+    #mobile-nav a {
+        text-decoration: none;
+    }
+    .con-wal-mob {
+        padding: 15px 30px;
+        background: #00ff00;
+        font-family: var(--primary-font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        color: #025b6d;
+        transition: 0.3s;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+    .social-mob {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-mob a:nth-child(2) {
+        margin: 0 10px;
+    }
+    .social-mob a img {
+        width: 35px;
+    }
+    .mob-logo {
+        display: block;
+    }
+    .mob-logo {
+        position: absolute;
+        top: 10px;
+        left: 40%;
+    }
+    .mob-logo img {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .mob-logo {
+        position: absolute;
+        top: 10px;
+        left: 40%;
+    }
+    .mob-logo img {
+        width: 50%;
+    }
+    #burger-menu img {
+        width: 50px;
+    }
+}

@@ -1,0 +1,108 @@
+body.active-modal {
+  overflow-y: hidden;
+}
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+.modal,
+.modal-overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+.modal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(49, 49, 49, 0.8);
+}
+.modal-contant {
+  position: absolute;
+  transform: translateX(-50%, -50%);
+  z-index: 100;
+}
+@keyframes modalFade {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-contant {
+  animation-name: modalFade;
+  animation-duration: 0.3s;
+}
+
+.modal-contant {
+  padding: 100px 100px;
+  background: #000000;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 20px;
+}
+.modal-title h1 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-family: var(--primary-font-family);
+}
+.modal-description {
+  width: 80%;
+  margin: auto;
+}
+
+.modal-description p {
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.modal-btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-btns button {
+  margin: 0 10px;
+  font-family: var(--primary-font-family);
+  font-size: 20px;
+  padding: 15px 80px;
+  border-radius: 10px;
+}
+.yes-btn {
+  background: #00ff00;
+}
+.no-btn {
+  background: #ffca0e;
+}
+
+
+@media (max-width: 500px){
+  .modal-contant {
+    padding: 20px 20px;
+    align-items: ce5nter;
+    border-radius: px;
+  }
+  .modal-btns button {
+    margin: 0 10px;
+    font-family: var(--primary-font-family);
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+}
