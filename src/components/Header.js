@@ -55,12 +55,9 @@ function Header() {
 
       setWalletConnected(true);
     } else {
-      window.open(
-        `https://metamask.app.link/dapp/hit-cat.netlify.app${pagelocation}`
-      );
+      window.open(`https://metamask.app.link/dapp/the4thds.io${pagelocation}`);
     }
   };
-
 
   return (
     <>
