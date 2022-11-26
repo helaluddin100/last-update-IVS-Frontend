@@ -31,7 +31,7 @@
         "url-to-deep-link": "^1.0.7",
         "web-vitals": "^1.1.2",
         "web3": "^1.6.1",
-        "web3modal": "^1.9.4"
+        "web3modal": "^1.9.9"
     },
     "scripts": {
         "start": "react-scripts start",
