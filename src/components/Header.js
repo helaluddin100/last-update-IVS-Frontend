@@ -6,11 +6,18 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 import { useLocation } from "react-router-dom";
-import Web3 from "web3";
 import Web3Modal from "web3modal";
+import { providerOptions } from "../utils/web3";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ethers } from "ethers";
+
+const web3Modal = new Web3Modal({
+  cacheProvider: true, // optional
+  providerOptions, // required
+});
+
 function Header() {
   const [navActive, setNavActive] = useState(false);
   const [sidebarActive, setSidebarActive] = useState(false);
@@ -30,33 +37,12 @@ function Header() {
   const [walletConnected, setWalletConnected] = useState(false);
   // Connect Wallet
   const connectWallet = async () => {
-    if (Web3.givenProvider) {
-      const providerOptions = {};
+    const provider = await web3Modal.connect();
+    const library = new ethers.providers.Web3Provider(provider);
+    const accounts = await library.listAccounts();
+    const network = await library.getNetwork();
 
-      const web3Modal = new Web3Modal({
-        network: "mainnet",
-        cacheProvider: true,
-        providerOptions,
-      });
-
-      const provider = await web3Modal.connect();
-      const web3 = new Web3(provider);
-
-      web3.eth.net.getId();
-
-      const addresses = await web3.eth.getAccounts();
-      const address = addresses[0];
-
-      const { ethereum } = window;
-
-      const networkId = await ethereum.request({
-        method: "net_version",
-      });
-
-      setWalletConnected(true);
-    } else {
-      window.open(`https://metamask.app.link/dapp/the4thds.io${pagelocation}`);
-    }
+    setWalletConnected(true);
   };
 
   return (
